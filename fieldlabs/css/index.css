@@ -1,0 +1,30 @@
+body{
+    background-color: #DCE7FA;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.btn {
+    width: 20%;
+    aspect-ratio: 1;
+    font-size: 1.5em;
+    margin: 5px;
+}
+
+
+@media (max-width: 768px) {
+    .btn {
+        width: 40%;
+    }
+}
+
+@media (max-width: 576px) {
+    .btn {
+        width: 60%;
+    }
+}

@@ -1,0 +1,21 @@
+body {
+    background-color: #DCE7FA;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 800px;
+}
+
+.btn-bottom {
+    position: absolute;
+    bottom: 20px;
+}

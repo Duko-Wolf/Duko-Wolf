@@ -1,0 +1,62 @@
+main {
+    background-image: url("../images/pinboard.png");	
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+#logo {
+    width: 70%;
+    height: auto;
+    max-width: 150px; /* Adjust max width as needed */
+    display: block;
+    margin: 20px auto; /* Center the image */
+}
+
+.form-group {
+    color: white;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.main-content {
+    padding: 20px;
+    z-index: 1;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparante achtergrond */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    backdrop-filter: blur(10px); /* Blur effect */
+    visibility: hidden; /* Begin als onzichtbaar */
+    opacity: 0; /* Begin als onzichtbaar */
+    transition: visibility 0s, opacity 0.5s;
+}
+
+.overlay-content {
+    background: rgb(93,190,227);
+    background: linear-gradient(0deg, rgba(93,190,227,0.5998774509803921) 0%, rgba(40,167,226,1) 100%);
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.overlay.show {
+    visibility: visible;
+    opacity: 1;
+}

@@ -1,0 +1,72 @@
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0; 
+    width: 300px;
+    height: 100%;
+    background-color: #28A7E2;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.sidebar.hidden {
+    transform: translateX(100%);
+}
+
+
+.btn-toggle {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: -100px; 
+    background-color: #007BFF;
+    border-radius: 10%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar .form-group {
+    margin-bottom: 15px;
+}
+
+.sidebar .form-group label {
+    color: white;
+}
+
+.sidebar .form-group input,
+.sidebar .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.sidebar .form-group input[type="checkbox"] {
+    width: auto;
+    margin-left: 0;
+    margin-right: 5px;
+}
+
+.sidebar .btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.sidebar .btn:hover {
+    background-color: #0056b3;
+}
